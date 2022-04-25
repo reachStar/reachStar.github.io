@@ -1817,7 +1817,8 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+/*font-family: $font-family-posts;*/
+  font-family: 'qianmo';
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -1974,6 +1975,7 @@ pre code {
   overflow-wrap: break-word;
 }
 .posts-expand .post-title-link {
+  font-family: 'qianmo';
   border-bottom: 0;
   color: var(--link-color);
   display: inline-block;
@@ -2736,6 +2738,12 @@ header {
 @font-face {
   font-family: "pomo";
   src: url("/font/三极泼墨体.ttf") /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "qianmo";
+  src: url("/font/千图纤墨体.ttf") /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */;
   font-style: normal;
   font-weight: normal;
 }
