@@ -1634,25 +1634,8 @@ pre code {
   color: #fff;
   padding: 0 6px;
   transition: bottom 0.2s ease-in-out;
-  background: #222;
-  cursor: pointer;
-  opacity: 0.6;
-  position: fixed;
-  z-index: 30;
-  right: 30px;
-}
-@media (max-width: 991px) {
-  .back-to-top {
-    right: 20px;
-  }
-}
-.back-to-top:hover {
-  opacity: 0.8;
-}
-@media (max-width: 991px) {
-  .back-to-top {
-    opacity: 0.8;
-  }
+/*sidebar-toggle();*/
+/*我注释掉的，因为有它条条在左边，不知道为啥*/
 }
 .back-to-top:hover {
   color: #fc6423;
@@ -1662,7 +1645,7 @@ pre code {
 }
 @media screen and (min-width: 900px) {
   .back-to-top {
-    right: 60px;
+    right: 30px;
     width: 70px;
     height: 900px;
     top: -900px;
