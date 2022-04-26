@@ -2732,19 +2732,19 @@ header {
 }
 @font-face {
   font-family: "bifeng";
-  src: url("/font/千图笔锋手写体.ttf") /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */;
+  src: url("/font/千图笔锋手写体.ttf"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "pomo";
-  src: url("/font/三极泼墨体.ttf") /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */;
+  src: url("/font/三极泼墨体.ttf"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "qianmo";
-  src: url("/font/千图纤墨体.ttf") /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */;
+  src: url("/font/千图纤墨体.ttf"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
   font-style: normal;
   font-weight: normal;
 }
