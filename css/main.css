@@ -1818,8 +1818,8 @@ pre code {
   width: 4px;
 }
 .post-body {
-/*font-family: $font-family-posts;*/
-  font-family: 'qianmo';
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+/*font-family: 'qianmo';*/
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -1976,9 +1976,10 @@ pre code {
   overflow-wrap: break-word;
 }
 .posts-expand .post-title-link {
-  font-family: 'qianmo';
+/*font-family: 'qianmo';*/
   border-bottom: 0;
-  color: var(--link-color);
+/*color: var(--link-color);*/
+  color: #555;
   display: inline-block;
   position: relative;
 }
@@ -2659,7 +2660,7 @@ ul.breadcrumb li:last-child {
   padding: 0px 40px 40px 40px;
 }
 body {
-  background: url("/images/123.jpg");
+/*background: url(/images/123.jpg);//自己喜欢的图片地址*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2706,6 +2707,40 @@ body {
   padding: 40px;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+.darkmode--activated {
+  --body-bg-color: #282828;
+  --content-bg-color: #333;
+  --card-bg-color: #555;
+  --text-color: #555;
+  --blockquote-color: #bbb;
+  --link-color: #555;
+  --link-hover-color: #eee;
+  --brand-color: #ddd;
+  --brand-hover-color: #ddd;
+  --table-row-odd-bg-color: #282828;
+  --table-row-hover-bg-color: #363636;
+  --menu-item-bg-color: #555;
+  --btn-default-bg: #222;
+  --btn-default-color: #ccc;
+  --btn-default-border-color: #555;
+  --btn-default-hover-bg: #666;
+  --btn-default-hover-color: #ccc;
+  --btn-default-hover-border-color: #666;
+  --highlight-background: #282b2e;
+  --highlight-foreground: #a9b7c6;
+  --highlight-gutter-background: #34393d;
+  --highlight-gutter-foreground: #9ca9b6;
+}
+.darkmode--activated img {
+  opacity: 0.75;
+}
+.darkmode--activated img:hover {
+  opacity: 0.9;
+}
+.darkmode--activated code {
+  color: #69dbdc;
+  background: transparent;
 }
 .sidebar {
   box-shadow: none;
