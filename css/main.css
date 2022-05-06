@@ -22,6 +22,10 @@
   --highlight-foreground: #444;
   --highlight-gutter-background: #e1e1e1;
   --highlight-gutter-foreground: #555;
+/*首页左上颜色*/
+  --site-brand-container-color: #6a5acd;
+  --post-block-color1: rgba(0,0,0,0.12);
+  --post-block-color2: rgba(0,0,0,0.06);
   color-scheme: light;
 }
 html {
@@ -2683,7 +2687,7 @@ body {
   margin-bottom: 24px;
   padding: 40px;
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  box-shadow: 8px 7px 2px 0 var(--post-block-color1), 7px 4px 1px -2px var(--post-block-color2), 0 1px 5px 0 var(--post-block-color1);
 }
 .main-inner {
   background-color: rgba(255,255,255,0);
@@ -2701,6 +2705,9 @@ body {
   border-radius: 30px 80px 30px 80px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
+.site-brand-container {
+  background: var(--site-brand-container-color);
+}
 .comments {
   background-color: rgba(255,255,255,0.85);
   margin-top: 24px;
@@ -2708,40 +2715,6 @@ body {
   padding: 40px;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-}
-.darkmode--activated {
-  --body-bg-color: #282828;
-  --content-bg-color: #333;
-  --card-bg-color: #555;
-  --text-color: #555;
-  --blockquote-color: #bbb;
-  --link-color: #555;
-  --link-hover-color: #eee;
-  --brand-color: #ddd;
-  --brand-hover-color: #ddd;
-  --table-row-odd-bg-color: #282828;
-  --table-row-hover-bg-color: #363636;
-  --menu-item-bg-color: #555;
-  --btn-default-bg: #222;
-  --btn-default-color: #ccc;
-  --btn-default-border-color: #555;
-  --btn-default-hover-bg: #666;
-  --btn-default-hover-color: #ccc;
-  --btn-default-hover-border-color: #666;
-  --highlight-background: #282b2e;
-  --highlight-foreground: #a9b7c6;
-  --highlight-gutter-background: #34393d;
-  --highlight-gutter-foreground: #9ca9b6;
-}
-.darkmode--activated img {
-  opacity: 0.75;
-}
-.darkmode--activated img:hover {
-  opacity: 0.9;
-}
-.darkmode--activated code {
-  color: #69dbdc;
-  background: transparent;
 }
 .sidebar {
   box-shadow: none;
