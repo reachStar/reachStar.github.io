@@ -1818,6 +1818,7 @@ pre code {
   width: 4px;
 }
 .post-body {
+  color: var(--link-color);
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 /*font-family: 'qianmo';*/
   overflow-wrap: break-word;
@@ -1978,8 +1979,8 @@ pre code {
 .posts-expand .post-title-link {
 /*font-family: 'qianmo';*/
   border-bottom: 0;
-/*color: var(--link-color);*/
-  color: #555;
+  color: var(--link-color);
+/*color: #555;*/
   display: inline-block;
   position: relative;
 }
