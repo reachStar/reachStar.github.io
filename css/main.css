@@ -2677,7 +2677,7 @@ body {
   background-color: rgba(255,255,255,0);
 }
 .post-block {
-  background-color: rgba(255,255,255,0.85);
+  background-color: var(--body-bg-color);
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 40px;
