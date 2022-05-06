@@ -2695,15 +2695,15 @@ body {
 }
 .header-inner {
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  box-shadow: 8px 7px 2px 0 var(--post-block-color1), 7px 4px 1px -2px var(--post-block-color2), 0 1px 5px 0 var(--post-block-color1);
 }
 .sidebar-inner {
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  box-shadow: 8px 7px 2px 0 var(--post-block-color1), 7px 4px 1px -2px var(--post-block-color2), 0 1px 5px 0 var(--post-block-color1);
 }
 .pagination {
   border-radius: 30px 80px 30px 80px;
-  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  box-shadow: 8px 7px 2px 0 var(--post-block-color1), 7px 4px 1px -2px var(--post-block-color2), 0 1px 5px 0 var(--post-block-color1);
 }
 .site-brand-container {
   background: var(--site-brand-container-color);
