@@ -249,6 +249,13 @@
 
                         </div>
 
+                        <!--创建按钮-->
+                        <tr>     
+                        <a   div class="btn" onclick="adding()" id = "button" rel="contents">下一页 » </a>                  
+                        </tr>
+
+
+
                       </main>
 
 
@@ -332,10 +339,12 @@
         }
         return result;
     }
-    function getData(page = 0) {
-        query.descending('createdAt').skip(page * 10).limit(10).find().then(function (results) {
+    function getData(page = 0, limittmp = 1) {
+        query.descending('createdAt').skip(page * 10).limit(limittmp * 10).find().then(function (results) {
             if (results.length == 0) {
-                alert('之前没发表过说说了')
+                alert('别翻了，已经滑到底了噢！')
+                x = document.getElementById("button");
+                x.innerHTML = "到底了哦";
             } else {
                 let resC = results;
                 reqData = false;
@@ -350,8 +359,14 @@
         }, function (error) { });
     }
  
-    getData(0);
- 
+    getData(0,1);
+    tmp = 1;
+
+    function adding(){
+      tmp=tmp+1;
+      getData(tmp-1,tmp);  
+    }
+
     query.count().then(function (count) {
         app.count = count;
     }, function (error) { });
