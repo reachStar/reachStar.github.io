@@ -137,18 +137,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -263,15 +263,18 @@
     <div class="post-body" itemprop="articleBody">
         <p>在windows系统下如何实现python32位与64位共存？不同版本pip如何共存？</p>
 <span id="more"></span>
-
-
-
 <p>因为毕设项目需要安装python一个库，结果网上一看，这个库只支持64位python版本。再瞅瞅我的，32位，懵……</p>
 <p>上网搜了一下，都说是先卸载32位（包括已安装的库），再安装64位。</p>
 <p>但我32位python也用了好几年时间了，陆陆续续不知道安装了多少库，直接卸载实在可惜！并且有些库只支持32位不支持64位，若以后遇到只支持32位的库，我再把64位版本卸了安装32位的？</p>
 <p>于是便想到同时安装32位和64位版本，经过探索具体如下。</p>
 <p>这里假设已经实现安装好了一个python和pip版本，就假设32位的吧。</p>
-<p>1.首先进入安装文件，修改<code>python</code>位<code>python32</code>。<br /><br>2.进入<code>cmd</code>，输入<code>python32 -m pip install --upgrade pip --force-reinstall</code>重新更新pip文件。<br /><br>3.修改python32位安装目录下<code>Scripts/pip</code>与<code>Scripts/pip3</code>等等等等文件名为<code>Scripts/pip_32</code>与<code>Scripts/pip3_32</code>。<br /><br>4.在<code>cmd</code>中输入<code>python32</code>，发现运行的为32位版本python，输入<code>pip_32 -v</code>，发现运行的为32位版本python对应下的pip。<br /><br>5.正常安装python64位版本，注意安装位置手动修改为自己选的位置，同时勾选安装pip、添加环境变量。<br /><br>6.修改python64位安装目录下<code>Scripts/pip</code>与<code>Scripts/pip3</code>等等等等文件名为<code>Scripts/pip_64</code>与<code>Scripts/pip3_64</code>。<br /><br>7.在<code>cmd</code>中输入<code>python64</code>，发现运行的为64位版本python，输入<code>pip_64 -v</code>，发现运行的为64位版本python对应下的pip。</p>
+<p>1.首先进入安装文件，修改<code>python</code>位<code>python32</code>。<br /><br>
+2.进入<code>cmd</code>，输入<code>python32 -m pip install --upgrade pip --force-reinstall</code>重新更新pip文件。<br /><br>
+3.修改python32位安装目录下<code>Scripts/pip</code>与<code>Scripts/pip3</code>等等等等文件名为<code>Scripts/pip_32</code>与<code>Scripts/pip3_32</code>。<br /><br>
+4.在<code>cmd</code>中输入<code>python32</code>，发现运行的为32位版本python，输入<code>pip_32 -v</code>，发现运行的为32位版本python对应下的pip。<br /><br>
+5.正常安装python64位版本，注意安装位置手动修改为自己选的位置，同时勾选安装pip、添加环境变量。<br /><br>
+6.修改python64位安装目录下<code>Scripts/pip</code>与<code>Scripts/pip3</code>等等等等文件名为<code>Scripts/pip_64</code>与<code>Scripts/pip3_64</code>。<br /><br>
+7.在<code>cmd</code>中输入<code>python64</code>，发现运行的为64位版本python，输入<code>pip_64 -v</code>，发现运行的为64位版本python对应下的pip。</p>
 <p>以后就能通过<code>pip_32 install</code>与<code>pip_64 install</code>自由选择pip版本啦~</p>
 
     </div>
@@ -299,6 +302,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2022/06/11/windows%E7%94%A8%E6%88%B7%E5%90%8D%E7%A7%B0%E7%9A%84%E6%9B%B4%E6%94%B9/" rel="next" title="windows用户名称的更改">
+                  windows用户名称的更改 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
