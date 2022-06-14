@@ -269,6 +269,9 @@
     <div class="post-body" itemprop="articleBody">
         <p>&lt;Hexo博客与Typora编辑器同时实现图片的便捷插入与预览&gt;</p>
 <span id="more"></span>
+
+
+
 <p>我很少写博客，不是为其他，是因为懒，尤其是懒得在博客中<em><strong>插入图片</strong></em>。诶呀，你看看啊，正常情况下，要在博客中插入图片，主要有如下几步：</p>
 <ol>
 <li>获得要插入的图片，另存在博客目录下（可以存到source下的image中，也可以通过<code>hexo new article</code>命令事先获得文章图片存储目录）</li>
@@ -279,27 +282,22 @@
 <p>所以，如何能和写word文档一样，插入图片直接拖动，插完直接预览呢？</p>
 <p>诶，我今天还真找到方法了，<em><strong>主要有如下几步</strong></em>：</p>
 <ol>
-<li>
-<p><strong>Typora设置</strong>。点击文件-&gt;偏好设置-&gt;图像，配置插入图片问复制到指定路径，底下三个勾都选，如下图所示。</p>
-<img src="/2022/06/11/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8ETypora%E7%BC%96%E8%BE%91%E5%99%A8%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E8%81%94%E5%90%88%E6%8F%92%E5%85%A5/image-20220611231725568.png" class="" title="image-20220611231725568">
+<li><p><strong>Typora设置</strong>。点击文件-&gt;偏好设置-&gt;图像，配置插入图片问复制到指定路径，底下三个勾都选，如下图所示。</p>
+<img src="/2022/06/11/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8ETypora%E7%BC%96%E8%BE%91%E5%99%A8%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E8%81%94%E5%90%88%E6%8F%92%E5%85%A5/image-20220611231725568.png" class="" title="image-20220611231725568"></li>
+<li><p><strong>Hexo配置</strong>。在根目录下，进入bash命令框，输入<code>npm install hexo-image-link  --save</code>安装插件。</p>
 </li>
-<li>
-<p><strong>Hexo配置</strong>。在根目录下，进入bash命令框，输入<code>npm install hexo-image-link  --save</code>安装插件。</p>
+<li><p><strong>更改根目录下_config.yml配置</strong>，找到<code>post_asset_folder</code>，改为true。</p>
 </li>
-<li>
-<p><strong>更改根目录下_config.yml配置</strong>，找到<code>post_asset_folder</code>，改为true。</p>
+<li><p>写文章前，**在根目录bash命令框中输入<code>hexo new 文章题目</code>**，可以自动在post文件夹中生成<code>文章题目.md</code>与<code>文章题目</code>图片存储目录了。</p>
 </li>
-<li>
-<p>写文章前，<strong>在根目录bash命令框中输入<code>hexo new 文章题目</code></strong>，可以自动在post文件夹中生成<code>文章题目.md</code>与<code>文章题目</code>图片存储目录了。</p>
-</li>
-<li>
-<p>这样就<strong>配置成功</strong>了。写文章之前，现在你可以把图片像word编辑一样<strong>拖动</strong>到typora直接预览，该过程不需要输入什么图片插入指令呀存储路径呀啥的，也不需要专门去对图片进行转存；直接网页端预览，图片可以正常显示。</p>
+<li><p>这样就<strong>配置成功</strong>了。写文章之前，现在你可以把图片像word编辑一样<strong>拖动</strong>到typora直接预览，该过程不需要输入什么图片插入指令呀存储路径呀啥的，也不需要专门去对图片进行转存；直接网页端预览，图片可以正常显示。</p>
 </li>
 </ol>
 <p>简单讲讲<strong>原理</strong>吧，<code>hexo new 文章题目</code>命令后，网页端图片存储相对路径直接指到图片存储目录中，而typora路径还需要对该路径进行指定，这是两者相对路径的区别，而<code>hexo-image-link</code>插件可以在预览时自动对路径进行剪辑使其符合网页端预览的要求。</p>
 <p>此外，第一步偏好设置后，拖动图片时typora可以自动将图片转存到同名目录下（正好就是上述hexo生成的图片存储目录），还能自动对路径进行更改，这些都不需要额外配置了。</p>
 <p>然后我就可以专注于博客内容而不必担心博客格式了！换言之，写博客markdown文件现在就和写word文件一样简单。emmmm，可能还要方便，毕竟typora结合markdown语法，可以<strong>自动输入格式</strong>，还能<strong>边写边预览</strong>。就像下面这样。</p>
 <img src="/2022/06/11/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8ETypora%E7%BC%96%E8%BE%91%E5%99%A8%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E8%81%94%E5%90%88%E6%8F%92%E5%85%A5/image-20220611233321372.png" class="" title="image-20220611233321372">
+
 <p>有什么不懂的地方欢迎在<strong>留言区</strong>里交流哦！</p>
 
     </div>
